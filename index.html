@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-</head>
-<body>
-   Landing Page 
-    <script src="js/main.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Landing Page</title>
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/normalize.css" />
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="site_header">
+				<div class="header_navbar">
+					<a class="header_workit_logo" href="index.html">
+						<img
+							src="img/logo-light.svg"
+							alt="this is navbar logo"
+							width="97"
+							height="26"
+						/>
+					</a>
+					<a class="sign_up" href="#">Apply for access</a>
+				</div>
+				<div class="header_content">
+					<h1 class="header_title">
+						Data <span class="underlined_title">tailored</span> to your needs.
+					</h1>
+
+					<a href="#" class="header_button">Learn more</a>
+
+					<picture class="picture_phone">
+						<source
+							media="(max-width:500px)"
+							srcset="
+								img/image-hero-mobile.png    1x,
+								img/image-hero-mobile@2x.png 2x
+							"
+						/>
+						<source
+							media="(max-width:768px)"
+							srcset="
+								img/image-hero-tablet.png    1x,
+								img/image-hero-tablet@2x.png 2x
+							"
+						/>
+						<source srcset="img/image-hero.webp" type="image/webp" />
+						<img
+							class="default_phone_img"
+							src="img/image-hero.png"
+							alt="this is default phone img"
+							width="767"
+							height="441"
+							srcset="img/image-hero.png 1x, img/image-hero@2x.png 2x"
+						/>
+					</picture>
+				</div>
+			</header>
+		</div>
+
+		<script src="js/main.js"></script>
+	</body>
 </html>
