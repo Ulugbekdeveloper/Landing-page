@@ -17,19 +17,19 @@
     "prettier": "^3.0.3"
   },
   "husky": {
-   "hooks": {
-    "pre-commit": "lint-staged"
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{html,css,less,ejs,json}": [
+      "prettier --write",
+      "git add"
+    ]
   }
-},
-"lint-staged": {
-  "*.{js,jsx}": [
-    "prettier --write",
-    "eslint --fix",
-    "git add"
-  ],
-  "*.{html,css,less,ejs,json}": [
-    "prettier --write",
-    "git add"
-  ]
-}
 }
